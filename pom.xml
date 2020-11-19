@@ -35,11 +35,5 @@
 	  <version>2.10.8</version>
 	</dependency>
 	 
-	 <dependency>
-	    <groupId>com.github.User</groupId>
-	    <artifactId>Repo</artifactId>
-	    <version>Tag</version>
-	</dependency>
- 
   </dependencies>
 </project>

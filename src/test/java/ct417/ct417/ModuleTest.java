@@ -16,7 +16,19 @@ public class ModuleTest extends TestCase {
 		mod1.setStudent(students1);
 		mod1.setStudent(students2);
 		
-		System.out.println(mod1);
+		//Course cour = new Course("Science",(2001,10,01,12,0,0,0) ,(2002,12,12,12,0,0,0));
+		Course cour = new Course("Science",null,null);
+		Course cour1 = new Course("Health",null,null);
+		cour.setModule(mod1);
+		cour.setModule(mod2);
+		cour.setModule(mod3);
+
+
+	
+		
+
+	//	System.out.println(mod1);
+		System.out.println(cour);
 		
 	}
 

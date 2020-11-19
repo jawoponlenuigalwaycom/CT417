@@ -9,18 +9,43 @@ public class Course {
 	private String courseName;
 	DateTime endDate = new DateTime();
 	DateTime startDate = new DateTime();
+	Module module;
+	Student student;
 
 	
 	List<Student> enrollStudents = new ArrayList<Student>();
 	List<Module> modules = new ArrayList<Module>();
 	
 	
-	Course(String cn, DateTime startDate, DateTime endDate){
-		String courseName = cn;
+	Course(String courseName, DateTime startDate, DateTime endDate){
+		this.courseName = courseName;
 		this.startDate= startDate;
 		this.endDate = endDate;		
 	}
 	
 	
-
+	public List<Module> getModule() {
+		return modules;
+	}
+	
+	public void setModule(Module module) {
+		modules.add(module);
+	}
+	
+	public String getCourseName() {
+		return courseName;
+	}
+	
+	public DateTime getEndDate() {
+		return endDate;
+	}
+	
+	public DateTime getStartDate() {
+		return startDate;
+	}
+	
+	public String toString() {
+			return String.format(courseName +": "+ startDate +" - "+ " "+ endDate + " "+ getModule());
+	}
+		
 }
