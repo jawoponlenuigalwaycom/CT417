@@ -15,7 +15,7 @@ public class Module{
 
 
 		
-	Module(String name, String id){
+	public Module(String name, String id){
 		this.name=name;
 		this.id= id;
 		}

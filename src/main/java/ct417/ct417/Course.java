@@ -7,8 +7,8 @@ import org.joda.time.DateTime;
 
 public class Course {
 	private String courseName;
-	DateTime endDate = new DateTime();
-	DateTime startDate = new DateTime();
+	private DateTime endDate = new DateTime();
+	private DateTime startDate = new DateTime();
 	Module module;
 	Student student;
 
@@ -17,7 +17,7 @@ public class Course {
 	List<Module> modules = new ArrayList<Module>();
 	
 	
-	Course(String courseName, DateTime startDate, DateTime endDate){
+	public Course(String courseName, DateTime startDate, DateTime endDate){
 		this.courseName = courseName;
 		this.startDate= startDate;
 		this.endDate = endDate;		
