@@ -44,7 +44,7 @@ public class Module{
 		return id;
 	}	
      public String toString() {
-		return String.format(id+" "+ name+" "+ getStudent());
+		return String.format("\n\t Module ID:"+ id+"Module name: "+ name+"Registered Students: "+ getStudent());
 	}
 	
 	

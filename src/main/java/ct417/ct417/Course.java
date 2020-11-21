@@ -45,7 +45,7 @@ public class Course {
 	}
 	
 	public String toString() {
-			return String.format(courseName +": "+ startDate +" - "+ " "+ endDate + " "+ getModule());
+			return String.format("Course Name: "+ courseName +" "+ startDate +" - "+ " "+ endDate + " "+ getModule());
 	}
 		
 }

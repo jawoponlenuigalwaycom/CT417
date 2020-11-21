@@ -7,9 +7,7 @@ public class StudentTest2 extends TestCase {
 
 	public void test() {
 		Student studentObject= new Student("jane", 18, 1234);
-		String output= studentObject.getUsername();
-		System.out.println(output);
-		assertEquals("jane18",output);
+		assertEquals("jane18",studentObject.getUsername());
 
 	}
 }

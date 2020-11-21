@@ -1,0 +1,23 @@
+
+language: java
+	jdk: oraclejdk8
+
+install:
+	- sudu apt-get update
+	
+stages:
+  - build
+  - test
+
+stage: build
+script:
+  - echo "building"
+  - mvn compile
+
+
+stage: test
+script:
+ -echo "testing"  
+
+
+	

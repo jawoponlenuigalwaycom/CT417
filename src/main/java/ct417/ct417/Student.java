@@ -64,7 +64,7 @@ public class Student {
 	}
 	
 	public String toString() {
-		return String.format(name+" "+age+" "+id);
+		return String.format("Name"+ name +"Age: "+age+"ID: "+ id+ "Username"+ getUsername());
 		
 	}
 	
