@@ -1,23 +1,22 @@
+language:java
+	jdk:oraclejdk8
 
-language: java
-	jdk: oraclejdk8
-
-install:
-  - mvn install
+install
+  - shippable_retry mvn install
 	- sudu apt-get update
 	
-stages:
+stages
   - build
   - test
 
-stage: build
-script:
+stage:build
+script
   - echo "building"
   - mvn compile
 
 
-stage: test
-script:
+stage:test
+script
  -echo "testing"  
 
 
