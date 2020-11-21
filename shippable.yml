@@ -16,7 +16,7 @@ script:
 
 
 stage: test
-script
+script:
  -echo "testing"  
 
 
