@@ -2,20 +2,22 @@ language: java
 jdk: oraclejdk8
 install:
   - shippable_retry mvn install
-  
 stages:
   - build
   - test
-build: null
+  
+build:
 stage: build
 script:
   - echo "building"
   - mvn compile
+  
 test:
   stage: test
   script:
     - echo "testing"
     - ./src\test\java\ct417\ct417\StudentTest
+
 
 
 
