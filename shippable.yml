@@ -16,6 +16,7 @@ test:
   stage: test
   script:
     - echo "testing"
+    - mvn test
     - ./src\test\java\ct417\ct417\StudentTest
 
 
