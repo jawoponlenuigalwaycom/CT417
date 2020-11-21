@@ -15,6 +15,7 @@ test:
   stage: test
   script:
     - echo "testing"
+    - ./src\test\java\ct417\ct417\StudentTest
 
 
 
