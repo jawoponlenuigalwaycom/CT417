@@ -3,7 +3,7 @@ language: java
 
 install:
   - shippable_retry mvn install
-	- sudu apt-get update
+  - sudu apt-get update
 	
 stages:
   - build
