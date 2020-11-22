@@ -11,6 +11,7 @@ public class Student {
 		Course course;
 		Module module;
 		
+		
 		List<Module> modules = new ArrayList<Module>();
 		List<Course> courses = new ArrayList<Course>();
 
@@ -35,23 +36,25 @@ public class Student {
 		return id;
 	}
 	
-	public Course getCourse() {
-		return course;
+	public List getCourse() {
+		return courses;
 	}
 
 
 	public void setCourse(Course course) {
 		this.course = course;
+		courses.add(course);
 	}
 
 
-	public Module getModule() {
-		return module;
+	public List getModule() {
+		return modules;
 	}
 
 
 	public void setModule(Module module) {
 		this.module = module;
+		modules.add(module);
 	}
 
 
@@ -64,7 +67,7 @@ public class Student {
 	}
 	
 	public String toString() {
-		return String.format("Name"+ name +"Age: "+age+"ID: "+ id+ "Username"+ getUsername());
+		return String.format("Name: "+ name +"\tAge: "+age+"\tID: "+ id+ "\tUsername"+ getUsername());
 		
 	}
 	

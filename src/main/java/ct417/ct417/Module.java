@@ -26,14 +26,17 @@ public class Module{
 
 	public void setStudent(Student student) {
 		students.add(student);
+		student.setModule(this);
+		
 	}
 
-	public Course getCourse() {
-		return course;
+	public List getCourse() {
+		return crs;
 	}
 
 	public void setCourse(Course course) {
-		this.course = course;
+		crs.add(course);
+
 	}
 
 	public String getName() {
@@ -44,7 +47,7 @@ public class Module{
 		return id;
 	}	
      public String toString() {
-		return String.format("\n\t Module ID:"+ id+"Module name: "+ name+"Registered Students: "+ getStudent());
+		return String.format("\n\t Module ID:"+ id+"\tModule name: "+ name+"\tRegistered Students: " + getStudent());
 	}
 	
 	

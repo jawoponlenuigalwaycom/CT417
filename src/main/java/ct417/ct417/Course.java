@@ -30,6 +30,9 @@ public class Course {
 	
 	public void setModule(Module module) {
 		modules.add(module);
+		module.setCourse(this);
+		
+		//student.setCourse(this);
 	}
 	
 	public String getCourseName() {
@@ -45,7 +48,7 @@ public class Course {
 	}
 	
 	public String toString() {
-			return String.format("Course Name: "+ courseName +  "  "+startDate +" - "+ endDate + " "+ getModule());
+			return String.format("Course Name: "+ courseName +  "  "+startDate +" - "+ endDate);
 	}
 		
 }
