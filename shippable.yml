@@ -14,6 +14,8 @@ script:
    - mkdir -p ct417/testResults
    - mkdir -p ct417/codeCoverage
    - cp -r target ct417/codeCoverage
+   - cd /ct417/src/test/java/ct417/ct417
+   - mvn -Dtest=ModuleTest test
 artifacts:
   reports:
      junit:
