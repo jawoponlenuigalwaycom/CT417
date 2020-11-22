@@ -4,7 +4,7 @@ install:
   - shippable_retry mvn install
 stages:
   - build
-  - test
+  - post_ci
   
 build:
 stage: build
@@ -23,8 +23,8 @@ artifacts:
      junit:
        - target/surefire-reports/TEST-*.xml
   
-test:
-  stage: test
+post_ci:
+  stage: post_ci
   script:
     - echo "testing"
     - mvn test
