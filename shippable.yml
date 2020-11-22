@@ -15,7 +15,10 @@ script:
    - cp -r target ct417/codeCoverage
    - mvn -Dtest=ModuleTest test
    - mvn -Dtest=StudentTest2 test
+   - mvn -Dtest=CourseTest test
 artifacts:
+  paths:
+      - target/surefire-reports/TEST-*.xml
   reports:
      junit:
        - target/surefire-reports/TEST-*.xml
