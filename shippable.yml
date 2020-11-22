@@ -26,5 +26,11 @@ artifacts:
 post_ci:
   stage: post_ci
   script:
-    - echo "testing"
-    - mvn test
+    - echo "Testing"
+    - mvn verify
+  artifacts:
+    when: always
+    reports:
+      junit:
+        - target/surefire-reports/TEST-*.xml
+  
