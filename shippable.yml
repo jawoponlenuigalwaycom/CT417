@@ -23,8 +23,8 @@ artifacts:
      junit:
        - target/surefire-reports/TEST-*.xml
   
-post_ci:
-  stage: post_ci
+on_success:
+  stage: on_success
   script:
     - echo "Testing"
     - mvn verify
