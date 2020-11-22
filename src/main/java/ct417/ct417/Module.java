@@ -11,9 +11,8 @@ public class Module{
 		Course course;
 		
 		List<Student> students = new ArrayList<Student>();
+		List<Student> studc = new ArrayList<Student>();
 		List<Course> crs = new ArrayList<Course>();
-
-
 		
 	public Module(String name, String id){
 		this.name=name;
@@ -23,7 +22,7 @@ public class Module{
 	public List<Student> getStudent() {
 		return students;
 	}
-
+	
 	public void setStudent(Student student) {
 		students.add(student);
 		student.setModule(this);
@@ -36,7 +35,6 @@ public class Module{
 
 	public void setCourse(Course course) {
 		crs.add(course);
-
 	}
 
 	public String getName() {

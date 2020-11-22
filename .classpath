@@ -41,5 +41,14 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="C:/Users/Jessica/.m2/repository/com/github/jawoponlenuigalwaycom/CT417/v1.2/CT417-v1.2.jar" sourcepath="C:/Users/Jessica/.m2/repository/com/github/jawoponlenuigalwaycom/CT417/v1.2/CT417-v1.2-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="com.github.jawoponlenuigalwaycom"/>
+			<attribute name="maven.artifactId" value="CT417"/>
+			<attribute name="maven.version" value="v1.2"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

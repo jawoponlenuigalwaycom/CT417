@@ -1,6 +1,7 @@
 package ct417.ct417;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 
 public class Student {
@@ -44,8 +45,8 @@ public class Student {
 	public void setCourse(Course course) {
 		this.course = course;
 		courses.add(course);
+		
 	}
-
 
 	public List getModule() {
 		return modules;
