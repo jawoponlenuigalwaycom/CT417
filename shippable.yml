@@ -8,7 +8,12 @@ stages:
   
 build:
 stage: build
-script: "mvn package"
+script:
+   - mvn install
+   - mvn compile
+   - mkdir -p ct417/testResults
+   - mkdir -p ct417/codeCoverage
+   - cp -r target ct417/codeCoverage
 artifacts:
   reports:
      junit:
