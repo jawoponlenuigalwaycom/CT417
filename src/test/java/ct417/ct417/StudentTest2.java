@@ -35,15 +35,7 @@ public class StudentTest2 extends TestCase {
 		Student studentObject= new Student("jane", 18, 1234);
 		assertEquals("jane181234",studentObject.getStudent());
 	}
-	@Test
-	public void testgetCourse() {
-		Student studentObject= new Student("jane", 18, 1234);
-        Course obj = new Course("health science", null, null);
-		HashSet<Course> courses = new HashSet<Course>();
-		studentObject.setCourse(obj);
-		courses.add(obj);
-		assertEquals(courses,studentObject.getCourse());
-	}
+	
 	@Test
 	public void testgetModule() {
 		Student studentObject= new Student("jane", 18, 1234);

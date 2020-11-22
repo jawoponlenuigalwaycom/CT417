@@ -8,9 +8,11 @@ stages:
   
 build:
 stage: build
-script:
-  - echo "building"
-  - mvn compile
+script: "mvn package"
+artifacts:
+  reports:
+     junit:
+       - target/surefire-reports/TEST-*.xml
   
 test:
   stage: test
